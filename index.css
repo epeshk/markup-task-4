@@ -11,11 +11,13 @@
 .toggle:checked + label:before
 {
     background-image: url('images/toggle.png');
-    background-size: 2em 2em;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    content: '';
+}
+
+.toggle:checked ~ main article
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info
@@ -62,12 +64,12 @@ article.cat
     display: block;
 }
 
-article.cat section
+.cat section
 {
     padding: 5px;
 }
 
-article.cat p
+.cat p
 {
     margin-bottom: 0;
     margin-top: 0;
@@ -75,7 +77,7 @@ article.cat p
     color: #555;
 }
 
-article.cat:hover
+.cat:hover
 {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2), 0 4px 4px 0 rgba(0, 0, 0, .2);
 }
@@ -93,7 +95,7 @@ article.cat:hover
     max-width: 100%;
 }
 
-article.cat h3
+.cat h3
 {
     text-overflow: ellipsis;
     white-space: nowrap;
