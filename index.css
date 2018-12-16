@@ -45,7 +45,7 @@
     -webkit-column-gap: 5px;
 }
 
-article.cat
+.cat
 {
     break-inside: avoid-column;
     width: 150px;
@@ -57,7 +57,7 @@ article.cat
     font-size: .8em;
 }
 
-.toggle:checked ~ main article.cat
+.toggle:checked ~ main .cat
 {
     height: auto;
     width: 600px;
@@ -89,7 +89,7 @@ article.cat
     object-fit: cover;
 }
 
-.toggle:checked ~ main article.cat img
+.toggle:checked ~ main .cat img
 {
     height: auto;
     max-width: 100%;
